@@ -8,7 +8,7 @@ var userInitials = document.querySelector(".user-initials");
 var userInitialsEl = document.querySelector("#initials");
 var highScore = document.querySelector("#highScore");
 var scoreBoardEl = document.getElementById("scoreBoard");
-var initialsDisplay = document.getElementById("highScoreBaby");
+var initialsDisplay = document.getElementById("gang");
 //var initialsInput = userInitials.value; 
 //var initials = initialsInput.value;
 
@@ -146,8 +146,6 @@ save.addEventListener("click", function(event) {
     renderScores();
 })
 
-
-
 //Add Time
 function countdown() {
 
@@ -171,9 +169,9 @@ function highScore() {
 
 function renderScores() {
     var initials = localStorage.getItem("initials");
-    var totalScore = localStorage.getItem("score");
-    document.querySelector("#highScoreBaby").style.display = "initial";
-    document.getElementById("highScoreBaby").style.display = "initial";
+    var score = localStorage.getItem("score");
+    document.querySelector(".user-initials").style.display = "initial";
+    document.getElementById("gang").style.display = "initial";
 
 
     if (initialsDisplay) {
